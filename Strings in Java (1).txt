@@ -1,0 +1,152 @@
+﻿1.Write a simple string program to take input from the user.
+Ans:
+ Simple string program to take input from the user:
+
+
+import java.util.Scanner;
+
+
+public class InputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        // Prompt user to enter a string
+        System.out.print("Enter a string: ");
+
+
+        // Read user input
+        String userInput = scanner.nextLine();
+
+
+        // Display the entered string
+        System.out.println("You entered: " + userInput);
+
+
+        // Close the scanner to avoid resource leak
+        scanner.close();
+    }
+}
+
+
+2.How do you concatenate two strings in Java? Give an example.
+Ans:
+Concatenate two strings in Java:
+
+
+public class ConcatenateStrings {
+    public static void main(String[] args) {
+        // Declare two strings
+        String str1 = "Hello";
+        String str2 = " World";
+
+
+        // Concatenate the strings
+        String result = str1 + str2;
+
+
+        // Display the result
+        System.out.println("Concatenated String: " + result);
+    }
+}
+
+
+3.How do you find the length of a string in Java? Give an example.
+Ans:
+
+
+public class StringLengthExample {
+    public static void main(String[] args) {
+        // Declare a string
+        String str = "Hello, World!";
+        
+        // Get the length of the string
+        int length = str.length();
+
+
+        // Display the length
+        System.out.println("Length of the string: " + length);
+    }
+}
+
+
+4.How do you compare two strings in Java? Give an example.
+Ans:
+
+
+public class CompareStrings {
+    public static void main(String[] args) {
+        // Declare two strings
+        String str1 = "Hello";
+        String str2 = "Hello";
+
+
+        // Compare the strings
+        if (str1.equals(str2)) {
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("Strings are not equal");
+        }
+    }
+}
+
+
+5.Write a program to find the length of a string "refrigerator".
+Ans:
+
+
+public class SpecificStringLength {
+    public static void main(String[] args) {
+        // Declare a specific string
+        String str = "refrigerator";
+
+
+        // Get the length of the string
+        int length = str.length();
+
+
+        // Display the length
+        System.out.println("Length of the string 'refrigerator': " + length);
+    }
+}
+
+
+6.Write a program to check if the letter 'e' is present in the word "Umbrella".
+Ans:
+
+
+public class CheckLetterInWord {
+    public static void main(String[] args) {
+        // Declare a word
+        String word = "Umbrella";
+        char letterToCheck = 'e';
+
+
+        // Check if the letter is present
+        if (word.contains(String.valueOf(letterToCheck))) {
+            System.out.println("'" + letterToCheck + "' is present in the word.");
+        } else {
+            System.out.println("'" + letterToCheck + "' is not present in the word.");
+        }
+    }
+}
+
+
+7.Write a program to delete all consonants from the string "Hello, have a good day".
+Ans:
+
+
+public class DeleteConsonants {
+    public static void main(String[] args) {
+        // Declare a string
+        String str = "Hello, have a good day";
+
+
+        // Remove all consonants from the string
+        String result = str.replaceAll("[^aeiouAEIOU]", "");
+
+
+        // Display the result
+        System.out.println("String after removing consonants: " + result);
+    }
+}
